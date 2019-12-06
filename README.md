@@ -40,8 +40,8 @@ stockholmA_barometer_2013_2017.txt move to the path spark.pressure.input.dir.aut
 
 Temperature Analysis:
 
-spark-submit --class com.weatheranalysis.spark.StockholmPressure --master yarn <location of weatheranalysis-1.0.0.jar>
+spark-submit --class com.weatheranalysis.spark.StockholmPressure --master yarn ```location of weatheranalysis-1.0.0.jar```
 
 Pressure Analaysis:
 
-spark-submit --class com.weatheranalysis.spark.StockholmTemperature --master yarn <location of weatheranalysis-1.0.0.jar>
+spark-submit --class com.weatheranalysis.spark.StockholmTemperature --master yarn ```location of weatheranalysis-1.0.0.jar```
