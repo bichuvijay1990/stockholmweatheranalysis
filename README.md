@@ -7,9 +7,9 @@ Stockholmweatheranalysis project is loading stockholm temperature and presusre m
 
 1. Download input files from following location
 
-Stockholm Temperature: https://bolin.su.se/data/stockholm/raw_individual_temperature_observations.php
+    Stockholm Temperature: https://bolin.su.se/data/stockholm/raw_individual_temperature_observations.php
 
-Stockholm pressure :https://bolin.su.se/data/stockholm/barometer_readings_in_original_units.php
+    Stockholm pressure :https://bolin.su.se/data/stockholm/barometer_readings_in_original_units.php
 
 2. File are downloaded and moving in to the hdfs location, hdfs locations specified in the sparkjob.properties file
 
@@ -36,7 +36,7 @@ stockholmA_barometer_2013_2017.txt move to the path spark.pressure.input.dir.aut
 
 2.Move jar to cluster
 
-3. Execute of the test by using below commands
+3.Execute of the test by using below commands
 
 Temperature Analysis
 spark-submit --class com.weatheranalysis.spark.StockholmPressure --master yarn <location of weatheranalysis-1.0.0.jar>
