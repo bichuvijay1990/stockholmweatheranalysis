@@ -38,8 +38,10 @@ stockholmA_barometer_2013_2017.txt move to the path spark.pressure.input.dir.aut
 
 3.Execute of the test by using below commands
 
-Temperature Analysis
+Temperature Analysis:
+
 spark-submit --class com.weatheranalysis.spark.StockholmPressure --master yarn <location of weatheranalysis-1.0.0.jar>
 
-Pressure Analaysis
+Pressure Analaysis:
+
 spark-submit --class com.weatheranalysis.spark.StockholmTemperature --master yarn <location of weatheranalysis-1.0.0.jar>
