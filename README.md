@@ -2,7 +2,7 @@
 
 Stockholmweatheranalysis project is loading stockholm atosphere temperature and presusre measusred during different timespan in to hive table.Temperature and presure data is in the text file format and residing in the hdfs directories. After the required cleansing and transformation on the input data by spark and scala , transfomed data loading in to hive table in the parquet format.
  
-# Input data file location:
+# Input data file location
 Stockholm Temperature: https://bolin.su.se/data/stockholm/raw_individual_temperature_observations.php
 Stockholm pressure :https://bolin.su.se/data/stockholm/barometer_readings_in_original_units.php
 
@@ -15,7 +15,7 @@ spark.temp.input.dir.t1t2t3txtntm     stockholm_daily_temp_obs_1961_2012_t1t2t3t
 spark.temp.input.dir.manual           stockholm_daily_temp_obs_2013_2017_t1t2t3txtntm.txt
 spark.temp.input.dir.automatic        stockholmA_daily_temp_obs_2013_2017_t1t2t3txtntm
 
-# Stockholm Pressure data data hdfs input path:
+# Stockholm Pressure data data hdfs input path
 spark.pressure.1858.input.dir 	      stockholm_barometer_1756_1858.txt
 spark.pressure.1861.input.dir         stockholm_barometer_1859_1861.txt
 spark.pressure.1937.input.dir         stockholm_barometer_1862_1937.txt
@@ -24,13 +24,13 @@ spark.pressure.2012.input.dir         stockholm_barometer_1961_2012.txt
 spark.pressure.input.dir.manual       stockholm_barometer_2013_2017.txt
 spark.pressure.input.dir.automatic    stockholmA_barometer_2013_2017.txt
 
-# Schema of the data:
+# Schema of the data
 Schema of the data created by using case class
 
-# Build:
+# Build
 Build the jar using Maven
   
-# Execution:
+# Execution of jar
 Temperature Analysis
 spark-submit --class com.weatheranalysis.spark.StockholmPressure --master yarn <location of weatheranalysis-1.0.0.jar>
 
