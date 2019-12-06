@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.weatheranalysis.spark</groupId>
   <artifactId>weatheranalysis</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0</version>
   
    <properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -99,7 +99,7 @@
 					<!-- MainClass in mainfest make a executable jar -->
 					<archive>
 						<manifest>
-							<mainClass>com.weatheranalysis.spark.Temperature</mainClass>
+							<mainClass>com.weatheranalysis.spark.StockholmTemperature</mainClass>
 						</manifest>
 					</archive>
 
