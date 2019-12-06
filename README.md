@@ -1,6 +1,6 @@
 # Stockholmweatheranalysis
 
-Stockholmweatheranalysis project is loading stockholm atosphere temperature and presusre measusred during different timespan in to hive table.Temperature and presure data is in the text file format and residing in the hdfs directories. After the required cleansing and transformation on the input data by spark and scala , transfomed data loading in to hive table in the parquet format.
+Stockholmweatheranalysis project is loading stockholm temperature and presusre measusred during different timespan in to two hive table.Temperature and presure data is in the text file format and residing in the hdfs directories. After the required cleansing and transformation on the input data by spark and scala , transfomed data loading in to hive table.
  
 # Input data file location
 Stockholm Temperature: https://bolin.su.se/data/stockholm/raw_individual_temperature_observations.php
