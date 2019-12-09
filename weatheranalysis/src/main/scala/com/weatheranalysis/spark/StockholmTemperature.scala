@@ -98,7 +98,7 @@ object StockholmTemperature extends SparkConfiguration {
         .map(x => x.split("\\s+"))
         .map(x => TemperatureDataLayout(x(0), x(1), x(2), x(3), x(4), x(5), x(6), x(7), x(8)))
       val automaticStationTempDF = sparkSession.createDataFrame(automaticStationTempRDD)
-      val automaticStationDF = manualStationTempDF
+      val automaticStationDF = automaticStationTempDF
         .withColumn("station", lit("automatic"))
         .withColumn("temperature_unit", lit("degC"))
 
