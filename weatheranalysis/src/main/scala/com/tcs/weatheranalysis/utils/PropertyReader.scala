@@ -1,4 +1,4 @@
-package com.weatheranalysis.utils
+package com.tcs.weatheranalysis.utils
 
 import java.util.Properties
 import scala.io.Source

@@ -1,4 +1,4 @@
-package com.weatheranalysis.spark
+package com.tcs.weatheranalysis.spark
 
 import java.io.FileNotFoundException
 import scala.util.Failure
@@ -9,12 +9,12 @@ import org.apache.spark.sql.SaveMode
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.lit
 
-import com.weatheranalysis.spark.helper.SparkConfiguration
-import com.weatheranalysis.utils.PropertyReader
-import com.weatheranalysis.layout.PressureCommonLayout
-import com.weatheranalysis.layout.Pressure1862layout
-import com.weatheranalysis.layout.Pressure1756Layout
-import com.weatheranalysis.layout.Pressure1859Layout
+import com.tcs.weatheranalysis.spark.helper.SparkConfiguration
+import com.tcs.weatheranalysis.utils.PropertyReader
+import com.tcs.weatheranalysis.layout.PressureCommonLayout
+import com.tcs.weatheranalysis.layout.Pressure1862layout
+import com.tcs.weatheranalysis.layout.Pressure1756Layout
+import com.tcs.weatheranalysis.layout.Pressure1859Layout
 
 /**
  * This is the main class contain the Entry point of the application 

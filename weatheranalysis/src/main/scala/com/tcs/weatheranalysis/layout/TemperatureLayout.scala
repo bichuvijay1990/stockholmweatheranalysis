@@ -1,4 +1,4 @@
-package com.weatheranalysis.layout
+package com.tcs.weatheranalysis.layout
 
 /**
  * This is the layout for the stockholm Temperature input data 
