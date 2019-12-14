@@ -24,22 +24,17 @@
 
 		<dependency>
 			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-core_2.12</artifactId>
+			<artifactId>spark-core_2.11</artifactId>
 			<version>${spark.core.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.spark</groupId>
-			<artifactId>spark-sql_2.12</artifactId>
+			<artifactId>spark-sql_2.11</artifactId>
 			<version>${spark.sql.version}</version>
 		</dependency>
 		
-		<dependency>
-        <groupId>org.apache.spark</groupId>
-        <artifactId>spark-hive_2.12</artifactId>
-        <version>2.4.4</version>
-      </dependency>
-
+	
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -99,7 +94,7 @@
 					<!-- MainClass in mainfest make a executable jar -->
 					<archive>
 						<manifest>
-							<mainClass>com.tcs.weatheranalysis.spark.StockholmPressure</mainClass>
+							<mainClass>com.tcs.weatheranalysis.spark.StockholmTemperature</mainClass>
 						</manifest>
 					</archive>
 
@@ -123,7 +118,7 @@
 				<version>2.0.0</version>
 				<configuration>
 					<reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
-					<suites>com.tcs.weatheranalysis.spark.test.StockholmPressureTest</suites>
+					<suites>com.tcs.weatheranalysis.spark.test.StockholmTemperatureTest</suites>
 					<junitxml>.</junitxml>
 					<filereports>TestSuiteReport.txt</filereports>
 				</configuration>
